@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> select page </title>
+</head>
+<body>
+    <div align="center">
+        <h2> 전체 레코드 조회 결과 </h2>
+        <h4> 조회된 결과수 : {{size}} </h4>
+        <a href="/"> [홈으로] </a>
+        <table border="1" width="500">
+            <tr> <!-- 제목 행 -->
+                <th> 상품 코드 </th>
+                <th> 상품 이름 </th>
+                <th> 상품 수량 </th>
+                <th> 상품 단가 </th>
+            </tr>
+            {% if data %}
+                {% for row in data %}
+                <tr>
+                    <td> {{row[0]}} </td>
+                    <td> {{row[1]}} </td>
+                    <td> {{row[2]}} </td>
+                    <td> {{row[3]}} </td>
+                </tr>
+                {% endfor %}
+            {% else %}
+                <tr>
+                    <th colspan="4">
+                        <h2> 검색 결과 없음 </h2>
+                    </th>
+                </tr>
+            {% endif %}
+        </table>
+        <br>
+    </div>
+</body>
+</html>

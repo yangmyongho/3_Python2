@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title> 예금상품 페이지 </title>
+</head>
+<body>
+    <div align="center">
+        <br><br>
+        <h2> 검색 예금 상품 </h2>
+        <table border="1" width = "800" align="center">
+            <tr>
+                <th> 은행코드 </th> <th> 은행이름 </th> <th> 은행가입여부 </th>
+                <th> 예금상품코드 </th> <th> 예금상품이름 </th> <th> 가입기간 </th> <th> 이율 </th>
+            </tr>
+            {% if dataset : %}
+                {% for row in dataset %}
+                <tr>
+                    <td> {{row[0]}}</td> <td> {{row[1]}}</td>
+                    <td> {{row[2]}}</td> <td> {{row[3]}}</td>
+                    <td> {{row[4]}}</td> <td> {{row[5]}}</td>
+                    <td> {{row[6]}}</td>
+                </tr>
+                {% endfor %}
+            {% endif%}
+        </table>
+            <p> 전체 레코드 수 : {{size}} 개</p>
+        <br>
+        <a href="/depositForm"> 이전 </a>
+        <br> <br>
+        <a href="/"> 메인화면 </a>
+    </div>
+</body>
+</html>

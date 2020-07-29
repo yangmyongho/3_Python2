@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title> 메인화면 </title>
+    <style type="text/css">
+       a{
+          text-decoration: none; /* a 태그 기본 서식 제거 */
+          color : blue;
+          font-family : 맑은 고딕;
+       }
+       /* 앵커 태그 위 마우스 오버시 */
+       a:hover{
+           text-decoration: none;
+           color : green;
+           font-family : 맑은 고딕;
+       }
+    </style>
+</head>
+<body>
+    <div align="center">
+        <h1> [예적금 검색프로그램] </h1>
+        <br>
+        <img src="{{ url_for('static', filename='money.jpg') }}" width="600" height="400">
+        <br>
+        <table border="2" width = '500'>
+            <tr>
+                <th> <a href="/bankForm"> 은행별검색 </a> </th>
+                <th> <a href="/depositForm"> 예금검색 </a> </th>
+                <th> <a href="/savingForm"> 적금검색 </a> </th>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

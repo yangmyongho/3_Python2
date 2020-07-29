@@ -1,0 +1,19 @@
+은행 카테고리 : 은행코드(bcode) 은행이름(bname) 
+전화번호
+예금카테고리 : 예금상품코드(ycode) 상품이름(yname)
+ 은행코드(bcode) 기간(period) 이율(rate) 
+적금 카테고리 : 적금상품코드(jcode)  상품이름(bname) 
+은행코드(bcode) 기간(period) 이율(rate)
+
+예금 or 적금 
+예,적금코드입력 -> 
+
+은행설명
+cursor.execute("insert into goods value(1, '신한은행', 11, 21)")
+    cursor.execute("insert into goods value(2, '국민은행', 11, 21)")
+    cursor.execute("insert into goods value(3, '하나은행', 11, 21)")
+    cursor.execute("insert into goods value(4, '기업은행', 11, 21)")
+    cursor.execute("insert into goods value(5, '우리은행', 11, 21)")
+    cursor.execute("insert into goods value(6, '농협은행', 11, 21)")
+    cursor.execute("insert into goods value(7, '전북은행', 11, 21)")
+    cursor.execute("insert into goods value(8, '씨티은행', 11, 21)")

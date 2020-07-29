@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title> 은행검색 페이지 </title>
+</head>
+<body>
+    <div align="center">
+        <h2> 은행검색 페이지 </h2>
+        <form method="post" action="/bankPro">
+        <table border="1" align="center">
+            <tr>
+                <th> 은행이름 </th>
+                 <td>
+                    <select name="code" size="1">
+                        <option value="0">### 은행명 선택 ###</option>
+                        <option value="1">신한은행</option>
+                        <option value="2">국민은행</option>
+                        <option value="3">하나은행</option>
+                        <option value="4">기업은행</option>
+                        <option value="5">우리은행</option>
+                        <option value="6">농형은행</option>
+                        <option value="7">전북은행</option>
+                        <option value="8">씨티은행</option>
+                    </select>
+                 </td>
+            </tr>
+        <tr>
+             <th colspan="2" align="center">
+               <input type="submit" value='검색'/>
+             </th>
+        </tr>
+        </table>
+        </form>
+        <a href= "/"> [main 화면]</a>
+    </div>
+</body>
+</html>
